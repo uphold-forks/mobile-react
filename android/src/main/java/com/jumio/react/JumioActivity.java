@@ -67,7 +67,6 @@ public class JumioActivity extends ReactActivity {
 
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
-		super.onActivityResult(requestCode, resultCode, data);
 		if (requestCode == BamSDK.REQUEST_CODE) {
 			if (data == null) {
 				return;
@@ -321,4 +320,3 @@ public class JumioActivity extends ReactActivity {
 		sendEvent(this.getReactInstanceManager().getCurrentReactContext(), "EventError", errorResult);
 	}
 }
-
